@@ -1,0 +1,81 @@
+<!doctype html>
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<title>What Are You Fuckin Gay</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>html{
+    background-color: black;
+    color: white;
+    font-family: "Courier New", Courier, monospace
+    }
+    body{
+        margin: 0px;
+        overflow: hidden;
+    }
+    a {
+        color: limegreen;
+        text-decoration: none;
+    }
+    video{
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .body {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    #about{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
+</style>
+<link rel="shortcut icon" type="image/x-icon" href="https://lh3.googleusercontent.com/obqJd3x_b6MfIeyyU8vZBViiBq2e-gAuSvJT6eUf5HTpSr6s8mQATl1JnVouaPwtdQhH=w300"/>
+
+<video id="video" src="/y/g4y" autoplay></video>
+
+<div id="about">
+<pre>
+Hope you like the site!!!
+MADE BY <a href="http://twitter.com/bren00x">BREN00X</a>
+SUBSCRIBE TO:
+<a href="http://youtube.com/iDubbbzTV" target="_blank">idubbbz</a>
+<a href="http://youtube.com/maxmoefoe" target="_blank">maxmoefoe</a>
+<a href="http://youtube.com/TVFilthyFrank" target="_blank">TVFilthyFrank</a>
+<a href="http://youtube.com/HowToBasic" target="_blank">HowToBasic</a>
+
+
+<a onclick="playVideo();showvid();" href="#">Play Again</a>
+</pre>
+</div>
+<script>
+    var vid=document.getElementById('video');
+    vid.addEventListener("ended", hideVideo, false);
+
+    function hideVideo() {
+        var vid=document.getElementById('video');
+        var other=document.getElementById('about');
+        vid.removeEventListener("ended", hideVideo, false);
+        vid.style.display='none';
+        other.style.display='block';
+    }
+    
+    function playVideo() {
+    var vid=document.getElementById('video');
+    vid.addEventListener("ended", hideVideo, false); 
+            function hideVideo() {
+        var vid=document.getElementById('video');
+        var other=document.getElementById('about');
+        vid.removeEventListener("ended", hideVideo, false);
+        vid.style.display='none';
+        other.style.display='block';
+    }
+        vid.play();
+    }
+    function showvid(){
+         $("#video").show();
+         document.getElementById("video").style.display="block";
+    }
+</script>
